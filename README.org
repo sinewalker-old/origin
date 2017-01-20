@@ -46,7 +46,7 @@ By using this command, the host operating will automatically launch the correct 
 
 ** Directory structure
 
-This is [[http://milosophical.me/blog/2016/home-dir-maintenance.html][specifed on my blog]].  The fine/current details are contained in the configuration for this project.  I have deliberately separated the structure out from the mechanics of building appropriate directories and links so that if the repo is forked, it can easily be customized to your own needs.
+This is [[http://milosophical.me/blog/2016/home-dir-maintenance.html][specifed on my blog]].  The fine/current details are contained in the =nodes.json= configuration for this project.  I have deliberately separated the structure out from the mechanics of building appropriate directories and links so that if the repo' is forked, it can easily be customized to your own needs.
 
 *** Directory node descriptions
 
@@ -76,22 +76,22 @@ In the configuration file (which is JSON), each node in the directory tree is sp
   }
 #+END_SRC
 
-Rather than list the same nodes multiple times for each platform, each has a list of =disposition= values for each target platform we're building on.  The platform will be detected by the script and then the each node created according to the =disposition= for that platform.
+Rather than list the same nodes multiple times for each operating system, each has a list of =disposition= values for each target OS we're building on.  The OS will be detected by the script and then the each node created according to the =disposition= for that OS.
 
 *** Node dispositions
 
-Node dispositions are grouped by platform.  The different platforms are:
+Node dispositions are grouped by operating systems.  The different OSes are:
 
  - =linux=: any flavour of Linux
  - =macos=: an Apple Macintosh
- - =doors=: Microsoft Windows (that's a Piers Anthony reference, and makes 5 letters)
+ - =doors=: Microsoft Windows (that's a Piers Anthony reference, and it makes 5 letters)
 
 The different =disposition= values are:
 
  - =dir=: make a directory for this node
  - =link=: make a link to the node named in the value
  - =builtin=: this node should exist already, do nothing
- - =null=: do nothing (node not required on this platform)
+ - =null=: do nothing (node not required on this OS)
 
 If the node needs sub-directories/nodes, these are listed in =children=, if not then =children= is =null=.  The child nodes are specified in the same way, and may also have children.
 
@@ -99,6 +99,6 @@ If the node needs sub-directories/nodes, these are listed in =children=, if not 
 
 It should be possible to fork this repo' and then change the =nodes.json= to meet your own requirements.  That would require no changes to the code, but possible extensions that /would/ require hacking the code might be:
 
- - *new platforms* (maybe you have different node requirements for AmigaOS, or Solaris, which aren't implemented here)
+ - *new operating systems* (maybe you have different node requirements for AmigaOS, or Solaris, which aren't implemented)
  - *more dispositions* (e.g. maybe bind-mounts, or Windows Joins?)
  - *different implementation languages* (maybe python or powershell aren't available on your platform)
