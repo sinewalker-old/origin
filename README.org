@@ -37,7 +37,7 @@ $ git clone git@github.com:sinewalker/origin.git ~/Projects/origin
 $ ~/Projects/origin/go #Unix
 #+END_SRC
 or
-#+BEGIN_SRC shell
+#+BEGIN_SRC powershell
 C:\Users\lockha> Projects\origin\go   #Windows (Powershell)
 #+END_SRC
 
