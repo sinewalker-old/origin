@@ -1,0 +1,328 @@
+{
+    "node": {
+        "name": "Applications",
+        "disposition": {
+            "linux": null,
+            "macos": "builtin",
+            "doors": null
+        },
+        "children": null
+    },
+    "node": {
+        "name": "Audio",
+        "disposition": {
+            "linux": "dir",
+            "macos": "dir",
+            "doors": "dir"
+        },
+        "children": {
+            "node": {
+                "name": "buz",
+                "disposition": {
+                    "linux": "dir",
+                    "macos": "dir",
+                    "doors": "dir"
+                },
+                "children": null
+            }
+        }
+    },
+    "node": {
+        "name": "Desktop",
+        "disposition": {
+            "linux": "builtin",
+            "macos": "builtin",
+            "doors": "builtin"
+        },
+        "children": null
+    },
+    "node": {
+        "name": "Documents",
+        "disposition": {
+            "linux": "builtin",
+            "macos": "builtin",
+            "doors": "builtin"
+        },
+        "children": null
+    },
+    "node": {
+        "name": "Downloads",
+        "disposition": {
+            "linux": "builtin",
+            "macos": "builtin",
+            "doors": "builtin"
+        },
+        "children": null
+    },
+    "node": {
+        "name": "Grid",
+        "disposition": {
+            "linux": "dir",
+            "macos": "dir",
+            "doors": "dir"
+        },
+        "children": {
+            "node": {
+                "name": "MEGA",
+                "disposition": {
+                    "linux": "dir",
+                    "macos": "dir",
+                    "doors": "dir"
+                },
+                "children": null
+            }
+        }
+    },
+    "node": {
+        "name": "Library",
+        "disposition": {
+            "linux": null,
+            "macos": "builtin",
+            "doors": null
+        },
+        "children": null
+    },
+    "node": {
+        "name": "Links",
+        "disposition": {
+            "linux": "dir",
+            "macos": "dir",
+            "doors": "builtin"
+        },
+        "children": null
+    },
+    "node": {
+        "name": "Maildir",
+        "disposition": {
+            "linux": "dir",
+            "macos": "dir",
+            "doors": null
+        },
+        "children": null
+    },
+    "node": {
+       "name": "Movies",
+       "disposition": {
+            "linux": "builtin",
+            "macos": "builtin",
+            "doors": null
+        },
+       "children": null
+   },
+    "node": {
+       "name": "Music",
+       "disposition": {
+            "linux": "builtin",
+            "macos": "builtin",
+            "doors": "builtin"
+        },
+       "children": null
+   },
+    "node": {
+       "name": "Pictures",
+       "disposition": {
+            "linux": "builtin",
+            "macos": "builtin",
+            "doors": "builtin"
+        },
+       "children": null
+   },
+    "node": {
+        "name": "Projects",
+       "disposition": {
+            "linux": "dir",
+            "macos": "dir",
+            "doors": "dir"
+        },
+       "children": null
+   },
+    "node": {
+       "name": "Public",
+       "disposition": {
+            "linux": null,
+            "macos": "builtin",
+            "doors": null
+        },
+       "children": null
+   },
+    "node": {
+       "name": "Uploads",
+       "disposition": {
+            "linux": "dir",
+            "macos": "dir",
+            "doors": "dir"
+        },
+       "children": null
+   },
+    "node": {
+       "name": "Video",
+       "disposition": {
+            "linux": "dir",
+            "macos": "dir",
+            "doors": "builtin"
+        },
+       "children": null
+   },
+
+    "node": {
+        "name": "bak",
+        "disposition": {
+            "linux": "dir",
+            "macos": "dir",
+            "doors": "dir"
+        },
+        "children": null
+    },
+    "node": {
+        "name": "bin",
+        "disposition": {
+            "linux": "dir",
+            "macos": "dir",
+            "doors": "dir"
+        },
+        "children": null
+    },
+    "node": {
+        "name": "buz",
+        "disposition": {
+            "linux": {"link": "~/Audio/buz"},
+            "macos": {"link": "~/Audio/buz"},
+            "doors": {"link": "%USERPROFILE%\\Audio\\buz"}
+        },
+        "children": null
+    },
+    "node": {
+        "name": "dev",
+        "disposition": {
+            "linux": {"link": "/run/media/${USER}/"},
+            "macos": {"link": "/Volumes"},
+            "doors": null
+        },
+        "children": null
+    },
+    "node": {
+        "name": "doc",
+        "disposition": {
+            "linux": {"link": "~/Documents"},
+            "macos": {"link": "~/Documents"},
+            "doors": {"link": "%USERPROFILE%\\Documents"}
+        },
+        "children": null
+    },
+    "node": {
+        "name": "fun",
+        "disposition": {
+            "linux": "dir",
+            "macos": "dir",
+            "doors": {"link": "%USERPROFILE%\\Saved Games"}
+        },
+        "children": {
+            "name": "net",
+            "disposition": {
+                "linux": {"link": "~/net/fun"},
+                "macos": {"link": "~/net/fun"},
+                "doors": {"link": "%USERPROFILE%\\net\\fun"}
+            }
+        }
+    },
+    "node": {
+        "name": "hax",
+        "disposition": {
+            "linux": {"link": "~/Projects"},
+            "macos": {"link": "~/Projects"},
+            "doors": {"link": "%USERPROFILE%\\Projects"}
+        },
+        "children": null
+    },
+    "node": {
+        "name": "key",
+        "disposition": {
+            "linux": {"link": "~/net/private/key"},
+            "macos": {"link": "~/net/private/key"},
+            "doors": {"link": "%USERPROFILE%\\net\\private\\key"}
+        },
+        "children": null
+    },
+    "node": {
+        "name": "lib",
+        "disposition": {
+            "linux": "dir",
+            "macos": "dir",
+            "doors": "dir"
+        },
+        "children": null
+    },
+    "node": {
+        "name": "mem",
+        "disposition": {
+            "linux": {"link": "/data/mem/${USER}/"},
+            "macos": "dir",
+            "doors": null
+        },
+        "children": null
+    },
+    "node": {
+        "name": "net",
+        "disposition": {
+            "linux": {"link": "~/Grid/MEGA/"},
+            "macos": {"link": "~/Grid/MEGA/"},
+            "doors": {"link": "%USERPROFILE%\\Grid\\MEGA\\"}
+        },
+        "children": null
+    },
+    "node": {
+        "name": "org",
+        "disposition": {
+            "linux": {"link": "~/net/org/"},
+            "macos": {"link": "~/net/org/"},
+            "doors": {"link": "%USERPROFILE%\\net\\org\\"}
+        },
+        "children": null
+    },
+    "node": {
+        "name": "pix",
+        "disposition": {
+            "linux": {"link": "~/Pictures"},
+            "macos": {"link": "~/Pictures"},
+            "doors": {"link": "%USERPROFILE%\\Pictures"}
+        },
+        "children": null
+    },
+    "node": {
+        "name": "pub",
+        "disposition": {
+            "linux": {"link": "/data/pub/"},
+            "macos": {"link": "~/Public/"},
+            "doors": {"link": "C:\\Users\\Public\\"}
+        },
+        "children": null
+    },
+    "node": {
+        "name": "tmp",
+        "disposition": {
+            "linux": {"link": "~/mem/tmp/"},
+            "macos": "dir",
+            "doors": "dir"
+        },
+        "children": null
+    },
+
+    "node": {
+        "name": "vid",
+        "disposition": {
+            "linux": {"link": "~/Video"},
+            "macos": {"link": "~/Video"},
+            "doors": {"link": "%USERPROFILE%\\Videos\\"}
+        },
+        "children": null
+    },
+    "node": {
+        "name": "vms",
+        "disposition": {
+            "linux": {"link": "/data/vms/"},
+            "macos": "dir",
+            "doors": null
+        },
+        "children": null
+    }
+}
