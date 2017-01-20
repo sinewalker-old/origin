@@ -1,25 +1,26 @@
 * Origin: builds a new $HOME
 
 #+BEGIN_QUOTE
-**or•i•gin** /(ôrˈə-jĭn, ŏrˈ-)/
+*or•i•gin* /(ôrˈə-jĭn, ŏrˈ-)/
 
 /n/. The point at which something comes into existence or from which it derives or is derived.
 
-/n/. Ancestry: "We cannot escape our origins, however hard we try” ( James Baldwin).
+/n/. Ancestry: "We cannot escape our origins, however hard we try” (James Baldwin).
 
 /n/. The fact of originating; rise or derivation: The rumor had its origin in an impulsive remark.
+
  -- The American Heritage® Dictionary of the English Language, 4th Edition
 #+END_QUOTE
 
 This little project will create a new =$HOME= directory for a clean computer system. The directory structure follows [[http://milosophical.me/blog/2016/home-dir-maintenance.html][the home-directory specification on my blog]] with slight tweaks and adjustments based upon the host operating system.
 
-It's intended to be used in the same spirit as [[https://github.com/sinewalker/dotfiles][my dotfiles]]: after a machine is built or a fresh user created for my, clone this repo and then cast the spell for build a familiar home base.
+It's intended to be used in the same spirit as [[https://github.com/sinewalker/dotfiles][my dotfiles]]: after a machine is built or a fresh user created, clone this repo and then cast the spell to build a familiar home base.
 
 Indeed one would probably clone several repos and then run them:
 
  * [[https://github.com/sinewalker/dotfiles][dotfiles]] first, to have some familiar /feel/ to the shell and other utilities
  * [[https://github.com/sinewalker/installer][my tool-chain installer]], then use it to install /tools/ required on the new machine
- * /this *origin* repo/, for setting up the /look/ of my =$HOME=
+ * /this/ *origin* /repo/, for setting up the /look/ of my =$HOME=
  * [[https://github.com/syl20bnr/spacemacs][spacemacs]] to install the [[http://spacemacs.org/][spacemacs]] emacs editor configuration base
  * [[https://github.com/sinewalker/dotspacemacs][dotspacemacs]] to configure /spacemacs/ to my personal preference
 
@@ -29,11 +30,15 @@ Early after creating a new =$HOME= (or =%USERPROFILE%=) directory on the host ma
 
  1. Clone this repo (requires that =git= be installed)
 #+BEGIN_SRC shell
-$ git clone git@github.com:sinewalker/origin ~/Projects/origin
+$ git clone git@github.com:sinewalker/origin.git ~/Projects/origin
 #+END_SRC
  2. Build the new =$HOME=:
 #+BEGIN_SRC shell
-$ ~/Projects/origin/go
+$ ~/Projects/origin/go #Unix
+#+END_SRC
+or
+#+BEGIN_SRC shell
+C:\Users\lockha> Projects\origin\go   #Windows (Powershell)
 #+END_SRC
 
 By using this command, the host operating will automatically launch the correct script to build this directory structure (Unix will run =~/Projects/origin/go=, whereas Windows will pick up =~\Projects\origin\go.ps1=)
